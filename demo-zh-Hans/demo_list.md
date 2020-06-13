@@ -7,6 +7,9 @@
 
 ## 使用帮助
 
+Thor 并非万能，只工作在系统 HTTP 层: 不支持非 HTTP 流量(TCP, UDP)及不经过系统 HTTP 代理的流量
+
+
 ### 调试其它设备的 HTTP(S) 请求
 
 [抓包代理使用帮助](../proxy-zh-Hans/doc.md)
