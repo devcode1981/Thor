@@ -60,16 +60,14 @@ c. 修改响应头：去掉响应头中 `"Content-Security-Policy"` 字段，以
 当有 title 标签时，执行以下表达式
 
 ``` javascript
-^@rsp.bodyText "<\/title>" "</title><script type='text/javascript' src='https://coding.net/u/Tumblr/p/thor-lib/git/raw/master/vconsole/3.2.0/vconsole.min.js'></script><script>new VConsole();</script>"
+^@rsp.bodyText "<\/title>" "</title><script type='text/javascript' src='https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js'></script><script>new VConsole();</script>"
 ```
 
 没有 title 标签，则找 body 标签替换
 
 ``` javascript
-^@rsp.bodyText "<\/body>" "<script type='text/javascript' src='https://coding.net/u/Tumblr/p/thor-lib/git/raw/master/vconsole/3.2.0/vconsole.min.js'></script><script>new VConsole();</script></body>"
+^@rsp.bodyText "<\/body>" "<script type='text/javascript' src='https://cdn.bootcss.com/vConsole/3.3.4/vconsole.min.js'></script><script>new VConsole();</script></body>"
 ```
-
-- *考虑加载速度的原因，没有直接使用 github 上的 vConsole 原地址，而是 dump 了一份到 coding.net 仓库里，所以上面用的是 codeing.net 的脚本地址*
 
 
 #### >> vConsole 注入设置如图
@@ -120,9 +118,11 @@ c. 修改响应头：去掉响应头中 `"Content-Security-Policy"` 字段，以
 
 ### Thor 20 天免费试用 TestFlight 申请
 
-0x1、[Thor 的详细介绍](https://github.com/PixelCyber/Thor/blob/master/README-zh-Hans.md)
+0x1、[TestFlight 试用申请](https://testflight.apple.com/join/aqSJDhMi)
 
-0x2、[TestFlight 申请问卷填写](https://wj.qq.com/s/1607760/e57d)
+0x2、[Thor HTTP Sniffer AppStore 地址](https://itunes.apple.com/app/id1210562295)
 
-0x3、过滤器 "WebView 注入调试" [后期优化版下载](https://github.com/PixelCyber/Thor/raw/master/tips-zh-Hans/bp_res/WebView_debug.f4thor)（下载后直接用 Thor 打开，安装）
+0x3、[Thor 的详细介绍](https://github.com/PixelCyber/Thor/blob/master/README-zh-Hans.md)
+
+0x4、过滤器 "WebView 注入调试" [后期优化版下载](https://github.com/PixelCyber/Thor/raw/master/tips-zh-Hans/bp_res/WebView_debug.f4thor)（下载后直接用 Thor 打开，安装）
 
