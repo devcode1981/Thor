@@ -26,15 +26,15 @@ Thor 并非万能，只工作在系统 HTTP 层: 不支持非 HTTP 流量(TCP, U
 
 ### 调试协作和数据共享
 
-* 导出 `.f4thor` 过滤器配置: 自己创建的过滤器可以导出并分享给有 Thor 的其他人使用
+* 导出 `.f4thor` 过滤器配置: 自己创建的过滤器可以导出并分享给团队中的其他人共享协作
 
-* 导出 `.p4thor`: 给有 Thor 的人导入抓包记录并查看
+* 导出 `.p4thor`: 与团队成员协作调试记录，并且可以导入 Anubis 进行重放调试
 
 * 导出 `.har`:  HTTP Archive File
 
 	* 查看预览: 用浏览器 HarViewer 插件或上传至[网页查看](https://micmro.github.io/PerfCascade/)
 
-	* 效率开发: 许多三方脚本支持 `.har` 作为数据导入
+	* 效率开发: 许多三方脚本和软件支持 `.har` 作为数据导入
 
 * `.p4thor` -> `.har`: `.p4thor` 导入 Thor，再重新导出为 `.har`
 
